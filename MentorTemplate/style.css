@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+header {
+    background-color: rgb(99, 172, 172);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 15px 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+header .container nav h1 a {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5fcf80;
+    text-decoration: none;
+}
+
+header .container nav ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+header .container nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container nav ul li a {
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 15px;
+    color: #37423b;
+    transition: 0.3s;
+}
+
+header .container nav ul li i {
+    color: #37423b;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+header .container nav ul li:nth-child(7) {
+    position: relative;
+}
+
+header .container nav ul li a:hover , header .container nav ul li a:focus{
+    color: #5fcf80;
+}
+
+.active{
+    color: #5fcf80 !important;
+}
+
+header .container nav ul li .drop {
+    width: 200px;
+    background: white;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 1s;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+header .container nav ul li .drop li {
+    padding: 10px 15px;
+    margin-right: 0;
+}
+
+nav ul li .drop li i {
+    margin-left: 35px;
+    color: #37423b;
+    font-size: 12px;
+}
+
+nav ul li:hover ul.drop {
+    display: block;
+}
+nav ul li:hover .dropdown{
+    color: #5fcf80;
+}
+nav ul li:hover .dropdown i{
+    color: #5fcf80;
+}
+header .container nav ul li .drop li .deep-drop {
+    min-width: 100%;
+    background: white;
+    display: none;
+    position: absolute;
+    left: -200px;
+    top: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.4s;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+header .container nav ul li .drop li .deep-drop li {
+    margin-right: 0;
+    padding: 10px 17px;
+}
+
+nav ul li .drop li:hover ul.deep-drop {
+    display: block;
+}
+nav ul li .drop li:hover .deepdrop{
+    color: #5fcf80;
+}
+nav ul li .drop li:hover .deepdrop i{
+    color: #5fcf80;
+}
+
+header .container nav ul li a .btn {
+    background-color: #5FCF80;
+    color: white;
+    opacity: 0.9;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: .3s;
+    border: 0px;
+    cursor: pointer;
+}
+
+header .container nav ul li a .btn:hover {
+    background: #3ac162;
+    opacity: 1;
+}
+
+header .container nav .hamburger {
+    font-size: 30px;
+    display: none;
+}
+
+@media only screen and (max-width:992px) {
+    header .container nav ul {
+        display: none;
+    }
+
+    header .container nav .hamburger {
+        display: block;
+    }
+}
+
