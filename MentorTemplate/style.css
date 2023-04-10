@@ -189,8 +189,7 @@ header .container nav .hamburger {
 /* navbar end */
 #hero {
     margin-top: 75px;
-    font-family: Poppins;
-    background-color: black;
+    font-family: 'Poppins', sans-serif;
     background-image: url("https://bootstrapmade.com/demo/templates/Mentor/assets/img/hero-bg.jpg");
     background-position: top center;
     background-size: cover;
@@ -214,8 +213,8 @@ header .container nav .hamburger {
     left: 0;
 }
 
-.header {
-    z-index: 2;
+#hero .header {
+    z-index: 999;
 }
 
 #hero h1 {
@@ -253,7 +252,6 @@ header .container nav .hamburger {
     border: 2px solid white;
     font-weight: 500;
     font-size: 15px;
-    display: inline-block;
     padding: 10px 35px;
     margin-top: 30px;
     border-radius: 50px;
