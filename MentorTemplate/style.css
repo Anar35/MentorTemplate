@@ -88,7 +88,7 @@ header .container nav ul li a:focus {
 }
 
 header .container nav ul li .drop {
-    width: 200px;
+    width: 210px;
     background: white;
     display: none;
     position: absolute;
@@ -97,7 +97,7 @@ header .container nav ul li .drop {
     padding: 10px 0;
     font-size: 14px;
     border-radius: 5px;
-    z-index: 999;
+    z-index: 99;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -133,7 +133,7 @@ header .container nav ul li .drop li .deep-drop {
     top: 50px;
     margin-top: 10px;
     font-size: 14px;
-    z-index: 999;
+    z-index: 99;
     border-radius: 5px;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
@@ -158,7 +158,6 @@ nav ul li .drop li:hover .deepdrop i {
 header .container nav ul li a .nav-btn {
     background-color: #5FCF80;
     color: white;
-    opacity: 0.9;
     font-size: 14px;
     padding: 10px 25px;
     border-radius: 50px;
@@ -627,48 +626,241 @@ header .container nav .hamburger {
 #mentors {
     padding: 60px 0;
 }
-#mentors .col-lg-4{
+
+#mentors .col-lg-4 {
     display: flex;
 }
-#mentors .card{
+
+#mentors .card {
     text-align: center;
     border: 1px solid #eef0ef;
 }
-#mentors .card img{
+
+#mentors .card img {
     width: 100%;
     height: auto;
 }
-#mentors .card-content{
+
+#mentors .card-content {
     padding: 30px 20px;
 }
-#mentors .card-content h4{
+
+#mentors .card-content h4 {
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     margin: 0;
     color: rgb(68, 68, 68);
 }
-#mentors .card-content p:first-of-type{
+
+#mentors .card-content p:first-of-type {
     font-size: 13px;
     font-style: italic;
     margin-top: 5px;
     font-family: sans-serif;
     color: rgb(68, 68, 68);
 }
-#mentors .card-content p:last-of-type{
+
+#mentors .card-content p:last-of-type {
     font-size: 14px;
     margin-bottom: 25px;
     font-style: italic;
     font-family: sans-serif;
     color: #aaaaaa;
 }
-#mentors .card-content .icons a{
+
+#mentors .card-content .icons a {
     font-size: 20px;
-    color:#7e9486;
+    color: #7e9486;
     margin-right: 5px;
     transition: 0.4s;
 }
-#mentors .card-content .icons a:hover{
+
+#mentors .card-content .icons a:hover {
     color: #5fcf80;
 }
+
 /* end #mentors section */
 /* end main */
+footer {
+    background-color: #eef0ef;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+footer .footer-top {
+    padding: 60px 0;
+    background-color: #f9faf9;
+}
+
+footer .footer-top .footer-links h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 28px;
+    color: rgb(55, 66, 59);
+    font-weight: 500;
+}
+
+footer .footer-top .footer-links p {
+    font-size: 15px;
+    color: #777777;
+    margin: 0;
+    line-height: 25px;
+}
+
+footer .footer-top .footer-links h4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+}
+
+footer .footer-top .footer-links ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer .footer-top .footer-links ul i {
+    color: #5fcf80;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+footer .footer-top .footer-links ul li a {
+    color: #777777;
+    transition: 0.3s;
+}
+
+footer .footer-top .footer-links ul li a:hover {
+    color: #5fcf80;
+}
+
+footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+footer .footer-top .col-lg-4 h4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+}
+
+footer .footer-top .col-lg-4 form {
+    margin-top: 30px;
+    border-radius: 50px;
+    padding: 7px 10px;
+    position: relative;
+    background-color: white;
+    border: 1px solid #e0e5e2;
+}
+
+footer .footer-top .col-lg-4 form input {
+    border: 0;
+    padding: 6px 10px;
+    width: calc(100% - 100px);
+}
+
+footer .footer-top .col-lg-4 form button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border: 0;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: white;
+    background-color: #5fcf80;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+footer .footer-top .col-lg-4 form button:hover {
+    background-color: #3ac162;
+}
+
+footer .footer-end {
+    padding: 24px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:600px) {
+    footer .footer-end {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.footer-end .last {
+    font-size: 14px;
+    align-items: start;
+    color: rgb(55, 66, 59);
+}
+
+.footer-end .last-text p {
+    margin-bottom: 7px;
+}
+
+.footer-end .last-link {
+    font-size: 13px;
+}
+
+.footer-end .last .last-link a {
+    color: #3ac162;
+    transition: 0.3s;
+}
+
+.footer-end .last .last-link a:hover {
+    color: #5fcf80;
+}
+
+footer .footer-end .last-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer .footer-end .last-links a {
+    font-size: 16px;
+    padding: 7px;
+    color: white;
+    background-color: #5fcf80;
+    margin-right: 8px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+footer .footer-end .last-links a:hover {
+    background-color: #3ac162;
+}
+
+/* end footer section */
+
+.right-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    border-radius: 50px;
+    background-color: #5fcf80;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+}
+
+.right-arrow:hover {
+    background-color: #7ed899;
+}
+
+.right-arrow i {
+    color: white;
+}
